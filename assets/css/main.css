@@ -3304,7 +3304,7 @@ input[type=submit]:hover {
 
 		}
 
-		@media screen and (max-width: 360px) {
+		@media screen and (max-width: 400px) {
 
 			#header {
 				padding: 2.5em 1em 0.1em 1em ;
@@ -3317,7 +3317,7 @@ input[type=submit]:hover {
 				/*my code : set video background with title on top */
 				#header video{
 					object-fit:cover;
-					position: fixed;
+					position:absolute;
 					width: 100%;
 					height: auto;
 					top:0;
@@ -3462,17 +3462,31 @@ input[type=submit]:hover {
 
 		} */
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 730px) {
+
 			#nav {
-			display: none;
+				display: none;
 			}
 
-			#nav + #main {
-				padding-top: 0;
-			}
-
+				#nav + #main {
+					padding-top: 0;
+				}
 
 		}
+/* Viewport greater than 730 - hide sandwich*/
+		@media screen and (min-width:731px) {
+			.navOpenBtn {
+				display: none;
+			}	
+		}
+ /*  position = absolute so it would fit inside the header */
+		.header .navOpenBtn {
+			display:flex;
+			justify-content: flex-end;
+			position: absolute;
+		}
+
+
 
 /* Main */
 

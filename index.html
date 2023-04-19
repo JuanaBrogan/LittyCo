@@ -20,12 +20,14 @@
 
 	</head>
 	<body class="is-preload">
-
 		<!-- Wrapper -->
 			<div id="wrapper">
 
 				<!-- Header -->
 					<header id="header" class="alt">
+						<!-- sandwhich added into header  -->
+						<!-- <span class="navOpenBtn" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span> -->
+
 						<video autoplay muted loop id="dribble" >
 							<source src="/videos/man_dribble.mp4">
 							</video>
@@ -35,13 +37,13 @@
 					</header>
 
 				<!-- Nav -->
-					<nav id="nav">
-						<ul>
+					<nav id="nav" class="overlay">
+						<!-- <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li> -->
+
+						<ul class="overlay-content">
 							<li><a href="#intro" class="active">About Us</a></li>
 							<li><a href="#coach">Coaches</a></li>
 							<li><a href="#first">Services</a></li>
-							
-							<!-- <li><a href="#second">Celeberity Clients</a></li> -->
 							<li><a href="#cta">Media Kit</a></li>
 							<li><a href="#contactUs">Contact Us</a></li>
 							<li><a href="#gallery">Gallery</a></li>
@@ -306,6 +308,17 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+
+			<!-- <script>
+				function openNav() {
+					document.getElementById("nav").style.height = "100%";
+				  }
+				
+				  function closeNav() {
+					document.getElementById("nav").style.height = "0%";
+				  }
+			</script> -->
 
 	</body>
 </html>
