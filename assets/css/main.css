@@ -3189,7 +3189,7 @@ input[type=submit]:hover {
 			letter-spacing: -0.025em;
 		}
 
-		#header.alt {
+		#header.alt  {
 			padding: 7em 5em 4em 5em ;
 		}
 
@@ -3226,7 +3226,22 @@ input[type=submit]:hover {
 					display: block;
 					margin: 0 auto;
 					max-width: 75%;
+					/* position: relative; */
 				}
+
+				#header video {
+					object-fit:none;
+					width: 100vw;
+					height: 100vh;
+					position:fixed;
+					top: 0;
+					left: 0;
+					z-index: -1;
+					}
+
+				
+
+
 
 		@media screen and (max-width: 1280px) {
 
@@ -3294,10 +3309,22 @@ input[type=submit]:hover {
 			#header {
 				padding: 2.5em 1em 0.1em 1em ;
 			}
-
-				#header.alt {
+				
+				#header.alt  {
 					padding: 3.5em 1em 0.5em 1em ;
+					
 				}
+				/*my code : set video background with title on top */
+				#header video{
+					object-fit:cover;
+					position: fixed;
+					width: 100%;
+					height: auto;
+					top:0;
+					left:0;
+
+				}
+
 
 		}
 
