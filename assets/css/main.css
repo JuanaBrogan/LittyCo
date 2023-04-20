@@ -3339,7 +3339,7 @@ input[type=submit]:hover {
 			transform: scale(0.8) rotate(-30deg);
 		}
 
-		/*--------------Demo -----*/
+		/*-------Header Subtitle & animation  -----*/
 
 		.flippingWords {
 			margin:0;
@@ -3353,9 +3353,7 @@ input[type=submit]:hover {
 		.dropping-texts > div {
 			font-size:0px;
 			position:absolute;
-			color:white;
-			  
-			
+			color:white;	
 		  }
 
 		  .dropping-texts div {
@@ -3468,7 +3466,7 @@ input[type=submit]:hover {
 		background-color: #ffffff;
 		color: #636363;
 		position: absolute;
-		width: 64em;
+		width: 64em ;
 		max-width: calc(100% - 4em);
 		padding: 1em;
 		background-color: #f7f7f7;
@@ -3552,7 +3550,7 @@ input[type=submit]:hover {
 					}
 
 		#nav.alt {
-			position: fixed;
+			position:fixed; /*fixed*/
 			top: 0;
 			padding: 0.5em 1em;
 			background-color: rgba(247, 247, 247, 0.95);
@@ -3569,41 +3567,52 @@ input[type=submit]:hover {
 					font-size: 0.9em;
 				}
 
-		/* @media screen and (max-width: 736px) {
+@media screen and (max-width: 730px) {
+	#nav {
+		display: flex;
+		position: relative;
+		margin: auto;
+		top: 0;
+		left: 0;
+		max-width:100%; /*changed this from width -> max-width. Nav covers entire width of screen */
+	}
+}
 
-			#nav {
-				display: none;
-			}
+		/*-----Attempt to add overlay mobile nav-----*/
 
-				#nav + #main {
-					padding-top: 0;
-				}
-
-		} */
-
+/*
 		@media screen and (max-width: 730px) {
 
-			#nav {
-				display: none;
-			}
+.overlay {
+	height: 100%;
+	width: 100%;
+	display: none;
+	position: static;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0, 0.9);
+	}
 
-				#nav + #main {
-					padding-top: 0;
-				}
+.menu {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
 
-		}
-/* Viewport greater than 730 - hide sandwich*/
-		@media screen and (min-width:731px) {
-			.navOpenBtn {
-				display: none;
-			}	
-		}
- /*  position = absolute so it would fit inside the header */
-		.header .navOpenBtn {
-			display:flex;
-			justify-content: flex-end;
-			position: absolute;
-		}
+.overlay ul {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+   transition: 0.3s; 
+}
+
+*/
 
 
 
