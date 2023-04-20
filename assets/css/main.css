@@ -3344,6 +3344,7 @@ input[type=submit]:hover {
 		.flippingWords {
 			margin:0;
 			display:flex;
+			padding-left:30px;
 			font-size: 7vw;
 			word-spacing: 5px;
 		}
