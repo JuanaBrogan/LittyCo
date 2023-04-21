@@ -3505,9 +3505,9 @@ input[type=submit]:hover {
 			border-bottom-color: #dddddd;
 		}
 
-		#nav + #main {
+		/* #nav + #main {
 			padding-top: 4.25em;
-		}
+		} */
 
 		#nav ul {
 			margin: 0;
@@ -3534,7 +3534,7 @@ input[type=submit]:hover {
 					display: inline-block;
 					height: 2.25em;
 					line-height: 2.25em;
-					padding: 0 1.25em;
+					padding: 0 0.25em;
 					border: 0;
 					border-radius: 8px;
 					box-shadow: inset 0 0 0 1px transparent;
@@ -3575,7 +3575,10 @@ input[type=submit]:hover {
 		top: 0;
 		left: 0;
 		max-width:100%; /*changed this from width -> max-width. Nav covers entire width of screen */
+		
 	}
+
+
 }
 
 		/*-----Attempt to add overlay mobile nav-----*/
@@ -3622,6 +3625,7 @@ input[type=submit]:hover {
 		background-color: #ffffff;
 		color: #575757;
 		border-radius: 0.25em;
+		
 	}
 
 		#main input, #main select, #main textarea {
@@ -3976,9 +3980,18 @@ input[type=submit]:hover {
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 		padding: 5em 5em 3em 5em ;
-		width: calc(100% + 2em);
-		margin: 0 0 3em -2em;
+		width: calc(100% - 2em); /* + 2em*/
+		margin: 2em 0 3em 1em; /*-2em*/
+		
 	}
+/*added extra -G */
+	#footer {
+		background-color: #384b2d93;
+		border-radius: 50px;;
+		
+}
+
+
 
 		#footer > * {
 			width: calc(50% - 2em);
@@ -3992,10 +4005,12 @@ input[type=submit]:hover {
 			text-align: center;
 		}
 
+
+
 		@media screen and (max-width: 1280px) {
 
 			#footer {
-				padding: 4em 4em 2em 4em ;
+				padding: 2em 2em 2em 2em ;
 			}
 
 		}
