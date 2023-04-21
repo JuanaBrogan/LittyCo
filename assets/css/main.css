@@ -1989,7 +1989,7 @@ input, select, textarea {
 /* Form */
 
 	form {
-		margin: 0 0 2em 0;
+		margin: 0 0em 2em 0;
 	}
 
 	label {
@@ -4020,7 +4020,7 @@ input[type=submit]:hover {
 			#footer {
 				padding: 4em 3em 2em 3em ;
 				display: block;
-				margin: 0 0 3em 0;
+				margin: em 0 3em 0;
 				width: 100%;
 			}
 
